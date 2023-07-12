@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css"   >
+    <title>Document</title>
+</head>
+<body>
+    <div class="container rounded bg-white mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-4 border-right">
+                <!-- <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                    <span class="font-weight-bold">{{employee.name}}</span><span class="text-black-50">{{employee.email}}</span><span> </span></div> -->
+            </div>
+            <!-- <form  class="col-md-5 border-right" [formGroup]="employeeForm" (ngSubmit)="onSubmit()"> -->
+           
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">Profile </h4>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-6"><label class="labels">Full Name</label><input type="text" class="form-control"  
+                            value="{{employeeForm.value.name}}" formControlName="name" ></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <label class="labels">Date of birth</label><input type="text" class="form-control"  value="{{employeeForm.value.dob}}" formControlName="dob"></div>
+                        <div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control"  value="{{employeeForm.value.email}}" formControlName="email"></div>
+                        <div class="col-md-12"><label class="labels">Department</label><input type="text" class="form-control"  value="{{employeeForm.value.department}}" formControlName="department"></div>
+                        <div class="col-md-12"><label class="labels">Designation</label><input type="text" class="form-control"  value="{{employeeForm.value.designation}}"formControlName="designation"></div>                       
+                        <div class="col-md-12"><label class="labels">reportingManager</label><input type="text" class="form-control"  value="{{employeeForm.value.reportingManager}}" formControlName="reportingManager"></div>
+                    </div>                   
+                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="submit">Save Profile</button></div>
+                </div>
+           
+        <!-- </form> -->
+        </div>
+    </div>
+</body>
+</html>

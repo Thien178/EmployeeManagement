@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class User {}","map":{"version":3,"mappings":"AAAA,OAAM,MAAOA,IAAI","names":["User"],"sourceRoot":"","sources":["/Users/thien/workspace/FrontendDemo1/src/app/user.ts"],"sourcesContent":["export class User {\n    name!: string;\n    password!:string;\n}\n"]},"metadata":{},"sourceType":"module","externalDependencies":[]}
